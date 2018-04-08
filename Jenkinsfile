@@ -11,7 +11,6 @@ node {
         sh 'npm test'
     
     stage 'Cleanup'
-        echo 'prune and cleanup'
-        sh 'npm prune'
+        echo 'cleanup'
         sh 'rm node_modules -rf'
 }
